@@ -1,0 +1,156 @@
+[
+    {
+        "product_id": 1,
+        "product_title": "Smartphone X",
+        "product_image": "image1.jpg",
+        "category": "Phones",
+        "price": 299,
+        "description": "Latest model with high-end features.",
+        "Specification": ["128GB storage", "5G Enabled", "12MP Camera"],
+        "availability": true,
+        "rating": 4.5
+    },
+    {
+        "product_id": 2,
+        "product_title": "Smartphone Y",
+        "product_image": "image2.jpg",
+        "category": "Phones",
+        "price": 399,
+        "description": "Affordable smartphone with great battery life.",
+        "Specification": ["64GB storage", "4G Enabled", "8MP Camera"],
+        "availability": true,
+        "rating": 4.2
+    },
+    {
+        "product_id": 3,
+        "product_title": "Smartphone Z",
+        "product_image": "image3.jpg",
+        "category": "Phones",
+        "price": 550,
+        "description": "High-performance smartphone with OLED display.",
+        "Specification": ["256GB storage", "5G Enabled", "16MP Camera"],
+        "availability": false,
+        "rating": 4.8
+    },
+    {
+        "product_id": 4,
+        "product_title": "Smartphone Pro",
+        "product_image": "image4.jpg",
+        "category": "Phones",
+        "price": 650,
+        "description": "Smartphone with high-end processing power.",
+        "Specification": ["512GB storage", "5G Enabled", "48MP Camera"],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "product_id": 5,
+        "product_title": "Smartphone Ultra",
+        "product_image": "image5.jpg",
+        "category": "Phones",
+        "price": 750,
+        "description": "Top-tier smartphone with pro-grade camera.",
+        "Specification": ["1TB storage", "5G Enabled", "108MP Camera"],
+        "availability": true,
+        "rating": 4.9
+    },
+    {
+        "product_id": 6,
+        "product_title": "Smartphone Lite",
+        "product_image": "image6.jpg",
+        "category": "Phones",
+        "price": 250,
+        "description": "Affordable smartphone with essential features.",
+        "Specification": ["64GB storage", "4G Enabled", "10MP Camera"],
+        "availability": true,
+        "rating": 4.1
+    },
+    {
+        "product_id": 7,
+        "product_title": "Laptop Pro",
+        "product_image": "image7.jpg",
+        "category": "Laptops",
+        "price": 950,
+        "description": "Powerful laptop for professionals.",
+        "Specification": ["16GB RAM", "1TB SSD", "Retina Display"],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "product_id": 8,
+        "product_title": "Laptop Air",
+        "product_image": "image8.jpg",
+        "category": "Laptops",
+        "price": 850,
+        "description": "Lightweight laptop with long battery life.",
+        "Specification": ["8GB RAM", "512GB SSD", "Lightweight"],
+        "availability": false,
+        "rating": 4.6
+    },
+    {
+        "product_id": 9,
+        "product_title": "Bluetooth Earbuds",
+        "product_image": "image9.jpg",
+        "category": "Accessories",
+        "price": 120,
+        "description": "Noise-cancelling wireless earbuds.",
+        "Specification": ["Bluetooth 5.0", "20 hours playtime", "Waterproof"],
+        "availability": true,
+        "rating": 4.4
+    },
+    {
+        "product_id": 10,
+        "product_title": "Smart Watch",
+        "product_image": "image10.jpg",
+        "category": "Accessories",
+        "price": 200,
+        "description": "Feature-packed smartwatch for fitness and productivity.",
+        "Specification": ["Heart-rate monitor", "GPS", "Waterproof"],
+        "availability": true,
+        "rating": 4.3
+    },
+    {
+        "product_id": 11,
+        "product_title": "Fitness Tracker Watch",
+        "product_image": "image11.jpg",
+        "category": "Watch",
+        "price": 180,
+        "description": "Monitor your health with this fitness tracker.",
+        "Specification": ["Sleep tracking", "Heart-rate monitor", "GPS"],
+        "availability": true,
+        "rating": 4.1
+    },
+    {
+        "product_id": 12,
+        "product_title": "Luxury Smartwatch",
+        "product_image": "image12.jpg",
+        "category": "Watch",
+        "price": 250,
+        "description": "High-end smartwatch with customizable watch faces.",
+        "Specification": ["Customizable faces", "Premium materials", "Waterproof"],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "product_id": 13,
+        "product_title": "Macbook Pro",
+        "product_image": "image13.jpg",
+        "category": "Macbook",
+        "price": 1500,
+        "description": "Powerful laptop with M1 chip for professional use.",
+        "Specification": ["16GB RAM", "512GB SSD", "M1 Chip"],
+        "availability": true,
+        "rating": 4.9
+    },
+    {
+        "product_id": 14,
+        "product_title": "Macbook Air",
+        "product_image": "image14.jpg",
+        "category": "Macbook",
+        "price": 1200,
+        "description": "Lightweight and fast with a stunning Retina display.",
+        "Specification": ["8GB RAM", "256GB SSD", "M1 Chip"],
+        "availability": true,
+        "rating": 4.7
+    }
+]
