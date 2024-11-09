@@ -6,9 +6,9 @@ const Cards = () => {
   const { category } = useParams();
   return (
     <div className="grid grid-cols-3 gap-2">
-      {data.map((item) => {
-        <Card item={item}></Card>;
-      })}
+      {data.map((item) => (
+        <Card key={item.id} item={item}></Card>
+      ))}
     </div>
   );
 };

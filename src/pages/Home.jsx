@@ -5,7 +5,7 @@ import Categories from "../components/Categories";
 
 const Home = () => {
   const categories = useLoaderData();
-  console.log(categories);
+  //console.log(categories);
   return (
     <div>
       {/* Banner */}
@@ -20,9 +20,11 @@ const Home = () => {
       <h2 className="font-bold text-center text-4xl mb-6">
         Explore Cutting-Edge Gadgets
       </h2>
-      <Categories categories={categories}></Categories>
-      {/* Dynamic section */}
-      <Outlet></Outlet>
+      <div className="flex gap-2 w-10/12 mx-auto">
+        <Categories categories={categories}></Categories>
+        {/* Dynamic section */}
+        <Outlet></Outlet>
+      </div>
     </div>
   );
 };

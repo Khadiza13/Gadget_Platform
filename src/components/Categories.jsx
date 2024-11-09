@@ -1,16 +1,18 @@
+/* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
 
 const Categories = ({ categories }) => {
+  console.log(categories);
   return (
-    <div className="w-10/12 mx-auto">
-      <ul className="menu bg-base-200 w-56">
-        {categories.map((category) => {
-          <li>
+    <div className="">
+      <ul className="menu bg-white w-40 gap-3">
+        {categories.map((category) => (
+          <li className="bg-base-200 rounded-3xl p-1" key={category.category}>
             <Link to={`/category/${category.category}`}>
               {category.category}
             </Link>
-          </li>;
-        })}
+          </li>
+        ))}
       </ul>
     </div>
   );
