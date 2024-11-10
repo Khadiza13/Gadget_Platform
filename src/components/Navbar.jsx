@@ -4,19 +4,40 @@ const Navbar = () => {
   const links = (
     <>
       <li>
-        <NavLink to="/">Home</NavLink>
+        <NavLink
+          className={({ isActive }) =>
+            ` ${isActive ? "bg-[#9538E2] text-white" : ""}`
+          }
+          to="/"
+        >
+          Home
+        </NavLink>
       </li>
       <li>
-        <a>Statistics</a>
+        <NavLink
+          className={({ isActive }) =>
+            ` ${isActive ? "bg-[#9538E2] text-white" : ""}`
+          }
+          to="/Statistics"
+        >
+          Statistics
+        </NavLink>
       </li>
       <li>
-        <a>Dashboard</a>
+        <NavLink
+          className={({ isActive }) =>
+            ` ${isActive ? "bg-[#9538E2] text-white" : ""}`
+          }
+          to="/Dashboard"
+        >
+          Dashboard
+        </NavLink>
       </li>
     </>
   );
   return (
     <div className="w-10/12 mx-auto">
-      <div className="navbar bg-base-100">
+      <div className="navbar ">
         <div className="navbar-start">
           <Link to={"/"} className="text-[#0B0B0B] text-xl font-bold">
             Gadget Heaven

@@ -1,8 +1,8 @@
 [
     {
-        "product_id": 1,
-        "product_title": "Smartphone X",
-        "product_image": "image1.jpg",
+        "id": 1,
+        "title": "Smartphone X",
+        "img": "https://i.ibb.co.com/845S5Xs/2014-09-23-iphone6-gallery-1.jpg",
         "category": "Phones",
         "price": 299,
         "description": "Latest model with high-end features.",
@@ -11,9 +11,9 @@
         "rating": 4.5
     },
     {
-        "product_id": 2,
-        "product_title": "Smartphone Y",
-        "product_image": "image2.jpg",
+        "id": 2,
+        "title": "Smartphone Y",
+        "img": "https://i.ibb.co.com/845S5Xs/2014-09-23-iphone6-gallery-1.jpg",
         "category": "Phones",
         "price": 399,
         "description": "Affordable smartphone with great battery life.",
@@ -22,9 +22,9 @@
         "rating": 4.2
     },
     {
-        "product_id": 3,
-        "product_title": "Smartphone Z",
-        "product_image": "image3.jpg",
+        "id": 3,
+        "title": "Smartphone Z",
+        "img": "https://i.ibb.co.com/845S5Xs/2014-09-23-iphone6-gallery-1.jpg",
         "category": "Phones",
         "price": 550,
         "description": "High-performance smartphone with OLED display.",
@@ -33,9 +33,9 @@
         "rating": 4.8
     },
     {
-        "product_id": 4,
-        "product_title": "Smartphone Pro",
-        "product_image": "image4.jpg",
+        "id": 4,
+        "title": "Smartphone Pro",
+        "img": "https://i.ibb.co.com/845S5Xs/2014-09-23-iphone6-gallery-1.jpg",
         "category": "Phones",
         "price": 650,
         "description": "Smartphone with high-end processing power.",
@@ -44,9 +44,9 @@
         "rating": 4.7
     },
     {
-        "product_id": 5,
-        "product_title": "Smartphone Ultra",
-        "product_image": "image5.jpg",
+        "id": 5,
+        "title": "Smartphone Ultra",
+        "img": "https://i.ibb.co.com/845S5Xs/2014-09-23-iphone6-gallery-1.jpg",
         "category": "Phones",
         "price": 750,
         "description": "Top-tier smartphone with pro-grade camera.",
@@ -55,9 +55,9 @@
         "rating": 4.9
     },
     {
-        "product_id": 6,
-        "product_title": "Smartphone Lite",
-        "product_image": "image6.jpg",
+        "id": 6,
+        "title": "Smartphone Lite",
+        "img": "https://i.ibb.co.com/845S5Xs/2014-09-23-iphone6-gallery-1.jpg",
         "category": "Phones",
         "price": 250,
         "description": "Affordable smartphone with essential features.",
@@ -66,9 +66,9 @@
         "rating": 4.1
     },
     {
-        "product_id": 7,
-        "product_title": "Laptop Pro",
-        "product_image": "image7.jpg",
+        "id": 7,
+        "title": "Laptop Pro",
+        "img": "https://i.ibb.co.com/z49tcxB/RW16-TLT-ver-99ac-q-90-m-6-h-705-w-1253-b-FFFFFFFF-f-jpg-o-f-p-140-aim-true.jpg",
         "category": "Laptops",
         "price": 950,
         "description": "Powerful laptop for professionals.",
@@ -77,9 +77,9 @@
         "rating": 4.7
     },
     {
-        "product_id": 8,
-        "product_title": "Laptop Air",
-        "product_image": "image8.jpg",
+        "id": 8,
+        "title": "Laptop Air",
+        "img": "https://i.ibb.co.com/z49tcxB/RW16-TLT-ver-99ac-q-90-m-6-h-705-w-1253-b-FFFFFFFF-f-jpg-o-f-p-140-aim-true.jpg",
         "category": "Laptops",
         "price": 850,
         "description": "Lightweight laptop with long battery life.",
@@ -88,9 +88,9 @@
         "rating": 4.6
     },
     {
-        "product_id": 9,
-        "product_title": "Bluetooth Earbuds",
-        "product_image": "image9.jpg",
+        "id": 9,
+        "title": "Bluetooth Earbuds",
+        "img": "https://i.ibb.co.com/845S5Xs/2014-09-23-iphone6-gallery-1.jpg",
         "category": "Accessories",
         "price": 120,
         "description": "Noise-cancelling wireless earbuds.",
@@ -99,9 +99,9 @@
         "rating": 4.4
     },
     {
-        "product_id": 10,
-        "product_title": "Smart Watch",
-        "product_image": "image10.jpg",
+        "id": 10,
+        "title": "Smart Watch",
+        "img": "https://i.ibb.co.com/M7JFpH4/0626737-qcy-watch-gs-bluetooth-calling-smartwatch.webp",
         "category": "Accessories",
         "price": 200,
         "description": "Feature-packed smartwatch for fitness and productivity.",
@@ -110,9 +110,9 @@
         "rating": 4.3
     },
     {
-        "product_id": 11,
-        "product_title": "Fitness Tracker Watch",
-        "product_image": "image11.jpg",
+        "id": 11,
+        "title": "Fitness Tracker Watch",
+        "img": "https://i.ibb.co.com/845S5Xs/2014-09-23-iphone6-gallery-1.jpg",
         "category": "Watch",
         "price": 180,
         "description": "Monitor your health with this fitness tracker.",
@@ -121,9 +121,9 @@
         "rating": 4.1
     },
     {
-        "product_id": 12,
-        "product_title": "Luxury Smartwatch",
-        "product_image": "image12.jpg",
+        "id": 12,
+        "title": "Luxury Smartwatch",
+        "img":"https://i.ibb.co.com/z49tcxB/RW16-TLT-ver-99ac-q-90-m-6-h-705-w-1253-b-FFFFFFFF-f-jpg-o-f-p-140-aim-true.jpg",
         "category": "Watch",
         "price": 250,
         "description": "High-end smartwatch with customizable watch faces.",
@@ -132,9 +132,9 @@
         "rating": 4.6
     },
     {
-        "product_id": 13,
-        "product_title": "Macbook Pro",
-        "product_image": "image13.jpg",
+        "id": 13,
+        "title": "Macbook Pro",
+        "img": "https://i.ibb.co.com/z49tcxB/RW16-TLT-ver-99ac-q-90-m-6-h-705-w-1253-b-FFFFFFFF-f-jpg-o-f-p-140-aim-true.jpg",
         "category": "Macbook",
         "price": 1500,
         "description": "Powerful laptop with M1 chip for professional use.",
@@ -143,9 +143,9 @@
         "rating": 4.9
     },
     {
-        "product_id": 14,
-        "product_title": "Macbook Air",
-        "product_image": "image14.jpg",
+        "id": 14,
+        "title": "Macbook Air",
+        "img": "https://i.ibb.co.com/z49tcxB/RW16-TLT-ver-99ac-q-90-m-6-h-705-w-1253-b-FFFFFFFF-f-jpg-o-f-p-140-aim-true.jpg",
         "category": "Macbook",
         "price": 1200,
         "description": "Lightweight and fast with a stunning Retina display.",

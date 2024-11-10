@@ -1,7 +1,8 @@
 [
-    { "id": 1, "category": "Phones" },
-    { "id": 2, "category": "Laptops" },
-    { "id": 3, "category": "Accessories" },
-    { "id": 4, "category": "Watch" },
-    { "id": 5, "category": "Macbook" }
+    { "id": 1, "category": "All Product" },
+    { "id": 2, "category": "Phones" },
+    { "id": 3, "category": "Laptops" },
+    { "id": 4, "category": "Accessories" },
+    { "id": 5, "category": "Watch" },
+    { "id": 6, "category": "Macbook" }
 ]

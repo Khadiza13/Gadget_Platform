@@ -1,16 +1,33 @@
 /* eslint-disable react/prop-types */
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Categories = ({ categories }) => {
   console.log(categories);
   return (
     <div className="">
-      <ul className="menu bg-white w-40 gap-3">
+      <ul className="menu bg-white w-40 gap-3 rounded-lg py-3">
         {categories.map((category) => (
-          <li className="bg-base-200 rounded-3xl p-1" key={category.category}>
-            <Link to={`/category/${category.category}`}>
+          <li key={category.category}>
+            <NavLink
+              to={`/category/${category.category}`}
+              className={({ isActive }) =>
+                `flex items-center justify-center rounded-3xl p-2  ${
+                  isActive ? "bg-[#9538E2] text-white" : "bg-gray-200"
+                }`
+              }
+            >
               {category.category}
-            </Link>
+            </NavLink>
+            {/* <NavLink
+              className={({ isActive }) =>
+                `block bg-base-200 rounded-3xl p-1 ${
+                  isActive ? "bg-[#9538E2] text-white" : ""
+                }`
+              }
+              to={`/category/${category.category}`}
+            >
+              {category.category}
+            </NavLink> */}
           </li>
         ))}
       </ul>
