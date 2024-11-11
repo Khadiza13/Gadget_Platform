@@ -1,7 +1,7 @@
 import banner from "../assets/banner.jpg";
 const Banner = ({ title, subtitle, ban }) => {
   return (
-    <div className="mb-96 w-[97%] mx-auto ">
+    <div className="mb-80 w-[97%] mx-auto ">
       <div className="hero bg-[#9538E2] relative rounded-xl">
         <div className="hero-content text-center">
           <div className="max-w-4xl">

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Card = ({ item }) => {
   //console.log(item);
   const { id, title, img, price } = item;
@@ -11,9 +13,11 @@ const Card = ({ item }) => {
           <h2 className="card-title">{title}</h2>
           <p>Price: {price}k</p>
           <div className="card-actions">
-            <button className="btn border-solid border-2 border-[#9538E2] text-[#9538E2] rounded-full">
-              View Details
-            </button>
+            <Link to={`/product/${id}`}>
+              <button className="btn border-solid border-2 border-[#9538E2] text-[#9538E2] rounded-full">
+                View Details
+              </button>
+            </Link>
           </div>
         </div>
       </div>
