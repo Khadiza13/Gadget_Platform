@@ -1,13 +1,20 @@
 import { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
+import { addCart, addWish, getAllWishs } from "../utility";
 
 const Details = () => {
   const data = useLoaderData();
   const { id } = useParams();
   const [details, setDetails] = useState({});
+  const [wish, setWish] = useState(false);
   useEffect(() => {
     const single = data.find((prodeuct) => prodeuct.id === parseInt(id));
     setDetails(single);
+    const wish = getAllWishs();
+    const wishExists = wish.find((item) => item.id === single.id);
+    if (wishExists) {
+      setWish(true);
+    }
   }, [data, id]);
   const {
     title,
@@ -19,10 +26,19 @@ const Details = () => {
     rating,
   } = details;
 
+  const handleCart = (product) => {
+    addCart(product);
+  };
+
+  const handleWish = (product) => {
+    addWish(product);
+    setWish(true);
+  };
+
   return (
     <div className="mb-80">
-      <div className="mb-80 w-full mx-auto ">
-        <div className="hero bg-[#9538E2] relative">
+      <div className=" w-full mx-auto ">
+        <div className="hero bg-[#9538E2] relative mb-80">
           <div className="hero-content text-center">
             <div className="max-w-4xl">
               <h1 className="text-4xl font-bold text-white mb-5">
@@ -105,10 +121,17 @@ const Details = () => {
               <span className="ml-2 text-gray-600">{rating}</span>
             </div>
 
-            <button className="px-5 py-2 bg-purple-500 text-white font-medium rounded-full mr-2">
+            <button
+              onClick={() => handleCart(details)}
+              className="px-5 py-2 bg-purple-500 text-white font-medium rounded-full mr-2"
+            >
               Add To Cart
             </button>
-            <button className="p-1 border-2 border-gray-400 rounded-full">
+            <button
+              disabled={wish}
+              onClick={() => handleWish(details)}
+              className="p-1 border-2 border-gray-400 rounded-full"
+            >
               <a>
                 <img
                   className="w-4"
