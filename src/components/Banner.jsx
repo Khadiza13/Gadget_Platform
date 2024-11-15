@@ -17,6 +17,9 @@ const Banner = () => {
       <li>
         <NavLink to="/Dashboard">Dashboard</NavLink>
       </li>
+      <li>
+        <NavLink to="/Offers">Offer</NavLink>
+      </li>
     </>
   );
   return (
@@ -60,7 +63,7 @@ const Banner = () => {
             </p>
 
             <button className="btn bg-white text-[#9538E2] font-bold text-lg rounded-3xl px-4 py-2 mb-64">
-              <Link to={"/dashboard"}>Shop Now</Link>
+              <Link to={"/Dashboard"}>Shop Now</Link>
             </button>
           </div>
         </div>

@@ -33,6 +33,16 @@ const Navbar = () => {
           Dashboard
         </NavLink>
       </li>
+      <li>
+        <NavLink
+          className={({ isActive }) =>
+            ` ${isActive ? "bg-[#9538E2] text-white" : ""}`
+          }
+          to="/Offers"
+        >
+          Offer
+        </NavLink>
+      </li>
     </>
   );
   return (

@@ -1,11 +1,15 @@
 import { useEffect, useState } from "react";
 import { getAllCarts, getAllWishs } from "../utility";
 import CartWish from "../components/CartWish";
+import { useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 const Dashboard = () => {
   const [cartItems, setCartItems] = useState([]);
   const [wishlistItems, setWishlistItems] = useState([]);
   const [view, setView] = useState("cart");
+  const [showModal, setShowModal] = useState(false);
+  const navigate = useNavigate();
   useEffect(() => {
     const carts = getAllCarts();
     setCartItems(carts);
@@ -32,8 +36,21 @@ const Dashboard = () => {
     }
   };
 
+  const handlePurchase = () => {
+    setShowModal(true);
+    setCartItems([]);
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
+    navigate("/");
+  };
+
   return (
     <div className="w-full mx-auto">
+      <Helmet>
+        <title>Dashboard - Gadget Heaven</title>
+      </Helmet>
       <div className="hero bg-[#9538E2] relative mb-6">
         <div className="hero-content text-center">
           <div className="max-w-4xl">
@@ -81,7 +98,15 @@ const Dashboard = () => {
             >
               Sort by Price
             </button>
-            <button className="px-4 py-2 bg-[#9538E2] text-white rounded-3xl font-semibold">
+            <button
+              onClick={handlePurchase}
+              className={`px-4 py-2 ${
+                totalCost > 0
+                  ? "bg-[#9538E2] text-white"
+                  : "bg-gray-300 text-gray-500 cursor-not-allowed"
+              } rounded-3xl font-semibold`}
+              disabled={totalCost === 0}
+            >
               Purchase
             </button>
           </div>
@@ -90,6 +115,21 @@ const Dashboard = () => {
           <CartWish key={item.id} item={item}></CartWish>
         ))}
       </div>
+
+      {showModal && (
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+          <div className="bg-white rounded-lg p-8 w-96 text-center">
+            <h2 className="text-2xl font-bold mb-4">Congratulations!</h2>
+            <p className="text-lg mb-6">Your purchase was successful.</p>
+            <button
+              onClick={closeModal}
+              className="px-6 py-2 bg-[#9538E2] text-white rounded-lg font-semibold"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

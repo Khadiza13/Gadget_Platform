@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import { addCart, addWish, getAllWishs } from "../utility";
+import { Helmet } from "react-helmet-async";
 
 const Details = () => {
   const data = useLoaderData();
@@ -37,6 +38,9 @@ const Details = () => {
 
   return (
     <div className="mb-80">
+      <Helmet>
+        <title>Details - Gadget Heaven</title>
+      </Helmet>
       <div className=" w-full mx-auto ">
         <div className="hero bg-[#9538E2] relative mb-80">
           <div className="hero-content text-center">
