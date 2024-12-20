@@ -2,6 +2,13 @@
 
 Gadget Heaven is a modern e-commerce application showcasing cutting-edge gadgets and accessories. The application includes a dynamic home page, product details, a dashboard to manage carts and wishlists, and an additional feature page for recommendations.
 
+# 🛠 Technologies Used
+
+- React: Core library for building the user interface.
+- React Router: For routing and navigation.
+- Tailwind CSS: For styling and responsiveness.
+- Local Storage: For persistent data storage.
+
 # 📚 React Concepts Used
 
 - Dynamic Routing: Seamless navigation across pages (Home, Dashboard, Details) using React Router.
@@ -24,10 +31,21 @@ Gadget Heaven is a modern e-commerce application showcasing cutting-edge gadgets
 - Showing recent offers available
 - Dynamic Titles and Favicon
 
-# 📄 Requirement Document
-
-[View Requirement Document](./docs/Batch-10_Assignment-08.pdf)
-
 # 🚀 Live Site
 
 https://gadget-platform.netlify.app/
+
+# 📂 Installation and Setup
+
+## Clone the Repository
+
+```bash
+git clone https://github.com/Khadiza13/Gadget_Platform
+```
+
+## Install Dependencies and Start the Development Server
+
+```bash
+npm i
+npm run dev
+```
